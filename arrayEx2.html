@@ -1,0 +1,26 @@
+<!DOCTYPE html>.
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			let names = new Array(4);
+			
+			for(let i = 1; i < names.length; i++) {
+				names[i] = prompt("학생"+i+"입력");
+			}
+			
+			document.write("<ol type='1'>");
+			for(let i in names) {
+				document.write("<table border='1'>");
+				document.write("<th>"+i+"</th>");
+				document.write("<tr><td>" + names[i] + "</td></tr>");
+			}
+			document.write("</table>");
+			document.write("</ol>");
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			// prompt() 함수가 반환한 입력 값을 저장하기 위한 변수 선언
+			/* var answer = prompt("가장 좋아하는 과일은?"); */
+			var isCard = confirm("카드로 결제합니까?");
+			
+			if(isCard == true){	// [확인] 버튼 누른 경우
+				cardNum=prompt("카드 번호를 입력하세요", "xxxx-xxxx-xxxx");
+				document.write("카드번호 : "+cardNum);
+			}else {// [취소] 버튼 누른 경우
+				document.write("카드로 결제하지 않습니다");
+			}
+
+
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
